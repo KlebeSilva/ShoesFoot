@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1112px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(65, 109, 255);
+    padding: 12px;
+    margin-bottom: 30px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff
+}
+
+h1 {
+    font-size: 40px;
+}
+
+header li, a {
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 12px;
+}
+
+.secao {
+    display: flex;
+}
+
+.secao img {
+    max-width: 500px;
+    width: 100%;
+}
+
+h2 {
+    color: rgb(65, 109, 255);
+    font-size: 30px;
+}
+
+.secao h2 {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.secao p {
+    margin-bottom: 4px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.produto ul {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+}
+
+.produto li {
+    list-style: none;
+}
+
+.produto h2 {
+    font-style: italic;
+    margin: 50px 0 50px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid  rgb(65, 109, 255);
+}
+
+
+.containerProduto {
+    max-width: 270px;
+    width: 100%;
+}
+
+.containerProduto img {
+    width: 100%;
+    height: 270px;
+}
+
+h3 {
+    font-size: 22px;
+    padding: 4px 0 6px 4px;
+}
+
+.containerProduto p {
+    font-size: 17px;
+    padding-bottom: 6px;
+}
+
+.containerProduto button {
+    width: 100%;
+    background-color:  rgb(65, 109, 255);
+    color: #fff;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.containerProduto button:hover {
+    background-color: rgb(93, 123, 221);
+}
+
+footer {
+    background-color: rgb(65, 109, 255);
+    padding: 6px;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+
+    .secao {
+        display: block;
+    }
+
+    .secao h2 {
+        margin:0;
+        margin-bottom: 30px;
+        padding-left: 0px;
+        border-bottom: 1px solid rgb(65, 109, 255);
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .secao img {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .secao p {
+        margin-bottom: 4px;
+        padding-left: 0;
+        font-size: 22px;
+    }
+
+    .produto {
+        width:100% ;
+    }
+
+    .produto h2 {
+        margin: 50px 0 50px 0;
+        padding-bottom: 12px;
+        border-bottom: 1px solid  rgb(65, 109, 255);
+    }
+
+    .containerProduto {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .produto ul {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 3%;
+    }
+
+    .produto li {
+        margin: 0 auto;
+    }
+
+    .containerProduto button {
+        padding: 12px;
+    }
+
+    .containerProduto img {
+        height: 300px;
+    }
+    
+}
+
+@media  screen and (max-width:640px) {
+    .container {
+        width: 95%;
+    }
+
+    header li, a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+        margin-left: 12px;
+    }
+
+    
+    .secao {
+        display: block;
+    }
+
+    .secao img {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .secao h2 {
+        margin: 0;
+        padding-left: 0px;
+        border-bottom: 1px solid rgb(65, 109, 255);
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .secao p {
+        margin-bottom: 4px;
+        padding-left: 0;
+        font-size: 22px;
+    }
+
+.produto ul {
+    display: block;
+}
+
+    .produto li {
+        margin: 0 auto 30px;
+    }
+
+    .containerProduto {
+        max-width: 330px;
+        width: 100%;
+    }
+    
+}
+
